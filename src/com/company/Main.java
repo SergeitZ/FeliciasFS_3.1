@@ -26,7 +26,7 @@ public class Main {
 
 //        displayByType.displayByType(products, "Fruit");
 
-        displayByType.displayByTypeSwitch(products, "Meat");
+        displayByType.displayByTypeSwitch(products, "Fruit");
 
 //        displayByType.displayByIndex(products, 3);
 
