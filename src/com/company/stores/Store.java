@@ -1,15 +1,17 @@
-package com.company;
+package com.company.stores;
+import com.company.Product;
+
 import java.util.*;
 
 public class Store {
     List<Product> products = new ArrayList<>();
     protected long balance;
 
-    public void Balance(long balance) {
-        this.balance = balance;
+    public Store() {
+        this.balance = 100_000;
     }
 
-    public void setBalance(int amt) {
+    protected void setBalance(int amt) {
         balance += amt;
     }
 

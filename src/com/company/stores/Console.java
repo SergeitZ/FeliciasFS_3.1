@@ -1,4 +1,7 @@
-package com.company;
+package com.company.stores;
+import com.company.Display;
+import com.company.Fruit;
+
 import java.util.*;
 
 import java.util.Scanner;
@@ -15,14 +18,15 @@ public class Console {
                 (3) Display Meats
                 (E) Exit program
                 Selection:\s""");
-        String selection = scanner.nextLine().toUpperCase(Locale.ROOT);
-        while (!selection.equals("E")) {
+        String selection;
+        do  {
+            selection = scanner.nextLine().toUpperCase(Locale.ROOT);
             switch (selection) {
                 case "1" -> addProduct();
                 case "2" -> Display.displayByType(store.products, "Fruit");
                 case "3" -> Display.displayByType(store.products, "Meat");
             }
-        }
+        } while (!selection.equals("E"));
         System.out.println("Thank you!");
     }
 

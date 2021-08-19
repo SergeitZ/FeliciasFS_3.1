@@ -18,6 +18,8 @@ The main focus of version 4.0 is to ensure Encapsulation in the system.
 use accurate access modifiers
  */
 
+import com.company.stores.Console;
+
 public class Main {
 
     public static void main(String[] args) {
@@ -25,10 +27,6 @@ public class Main {
         Console console = new Console();
 
         console.run();
-
-//        Store store = new Store();
-//
-//        store.setBalance(100_000);
 
 //        System.out.println(store.getBalance());
 
