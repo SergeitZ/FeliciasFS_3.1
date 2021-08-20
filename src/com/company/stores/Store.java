@@ -1,6 +1,5 @@
 package com.company.stores;
 import com.company.Product;
-
 import java.util.*;
 
 public class Store {

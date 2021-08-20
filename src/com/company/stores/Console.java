@@ -2,18 +2,21 @@ package com.company.stores;
 import com.company.Display;
 import com.company.Fruit;
 import com.company.Meat;
-import java.util.*;
 
+import java.text.NumberFormat;
+import java.util.*;
 import java.util.Scanner;
 
 public class Console {
     Scanner scanner = new Scanner(System.in);
     Store store = new Store();
+    String balanceFormatted = NumberFormat.getCurrencyInstance().format(store.getBalance());
 
     public void run() {
         System.out.println("\tWelcome to Felicia's Fruit Stand\nPlease make a selection from the menu below");
         String selection;
         do  {
+            System.out.println("Current Store balance: " + balanceFormatted);
             System.out.print("""
                 (1) Add a product
                 (2) Display Fruits
