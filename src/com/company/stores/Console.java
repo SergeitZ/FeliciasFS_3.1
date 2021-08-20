@@ -1,7 +1,7 @@
 package com.company.stores;
 import com.company.Display;
 import com.company.Fruit;
-
+import com.company.Meat;
 import java.util.*;
 
 import java.util.Scanner;
@@ -12,14 +12,14 @@ public class Console {
 
     public void run() {
         System.out.println("\tWelcome to Felicia's Fruit Stand\nPlease make a selection from the menu below");
-        System.out.print("""
+        String selection;
+        do  {
+            System.out.print("""
                 (1) Add a product
                 (2) Display Fruits
                 (3) Display Meats
                 (E) Exit program
                 Selection:\s""");
-        String selection;
-        do  {
             selection = scanner.nextLine().toUpperCase(Locale.ROOT);
             switch (selection) {
                 case "1" -> addProduct();
@@ -53,7 +53,6 @@ public class Console {
         String type = "Meat";
         System.out.print("Adding a new meat.\nPlease enter product kind: ");
         kind = scanner.nextLine();
-        store.products.add(new Fruit(kind, type));
+        store.products.add(new Meat(kind, type));
     }
-
 }

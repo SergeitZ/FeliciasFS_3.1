@@ -1,8 +1,8 @@
 package com.company;
 
 public class Product {
-    public String kind;
-    public String type;
+    protected String kind;
+    protected String type;
 
     public Product(String kind, String type) {
         this.kind = kind;

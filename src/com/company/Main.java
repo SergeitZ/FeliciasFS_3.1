@@ -27,11 +27,6 @@ public class Main {
         Console console = new Console();
 
         console.run();
-
-//        System.out.println(store.getBalance());
-
-//        console.addProduct();
-//        console.addProduct();
 //
 //        Display.displayByType(console.store.products, "Fruit");
 //

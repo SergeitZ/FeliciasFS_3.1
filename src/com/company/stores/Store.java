@@ -8,11 +8,7 @@ public class Store {
     protected long balance;
 
     public Store() {
-        this.balance = 100_000;
-    }
-
-    protected void setBalance(int amt) {
-        balance += amt;
+        this.balance = 100_000; //$1,000
     }
 
     public long getBalance() {
