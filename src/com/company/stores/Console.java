@@ -33,7 +33,6 @@ public class Console {
         System.out.println("Thank you!");
     }
 
-
     public void addProduct() {
         System.out.print("What type of product would like to add\n(F) Fruit\n(M) Meat\nSelection: ");
         String selection = scanner.nextLine();

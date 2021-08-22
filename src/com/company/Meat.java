@@ -6,4 +6,8 @@ public class Meat extends Product{
 
         super(kind, type);
     }
+
+    public int getPrice() {
+        return price;
+    }
 }

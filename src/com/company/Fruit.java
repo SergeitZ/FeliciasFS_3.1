@@ -6,4 +6,8 @@ public class Fruit extends Product{
 
         super(kind, type);
     }
+
+    public int getPrice() {
+        return price;
+    }
 }
